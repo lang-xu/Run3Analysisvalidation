@@ -38,12 +38,12 @@ void CompareMCvsData(TString filemc = "AnalysisResults_O2_MC.root", TString file
 		hist1D_DATA[i] -> Draw("same");
 		
 		if(i == 0){
-			TLegend *l = new TLegend(0.7,0.72,0.9,0.9);
-			l->AddEntry(hist1D_MC[i],"MC");
-			l->AddEntry(hist1D_DATA[i],"data");
-			l->SetFillStyle(0);
-			l->SetLineWidth(0);
-			l->Draw("same");
+			TLegend *legend = new TLegend(0.7,0.72,0.9,0.9);
+			legend->AddEntry(hist1D_MC[i],"MC");
+			legend->AddEntry(hist1D_DATA[i],"data");
+			legend->SetFillStyle(0);
+			legend->SetLineWidth(0);
+			legend->Draw("same");
 		}	
 	}
 
