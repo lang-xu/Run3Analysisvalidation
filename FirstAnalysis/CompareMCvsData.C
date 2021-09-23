@@ -5,7 +5,7 @@
 
 void CompareMCvsData(TString filemc = "AnalysisResults_O2_MC.root", TString filedata = "AnalysisResults_O2_DATA.root", TString task = "xic" ){
 //Set Canvas
-	TCanvas *c = new TCanvas("c",Form("MC and data Comparison for %s task", task.Data()),1100,1100);
+	TCanvas *c = new TCanvas("c",Form("MC and data Comparison for %s task", task.Data()),1400,1100);
 	c->Divide(3,3);
 	gStyle->SetOptStat(0);
 	gStyle->SetPalette(0);
